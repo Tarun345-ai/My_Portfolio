@@ -6,15 +6,17 @@ function Home() {
   return (
     <div className="home">
       <h1>Hi, I'm Tarun 👋</h1>
-      <h2>Frontend Developer</h2>
-      
+
+      <h2>Aspiring Full Stack Developer</h2>
+
       <p>
-        I am a passionate developer who loves building web applications 
-        and learning new technologies.
+        I build responsive and user-friendly web applications using modern 
+        technologies like React and JavaScript. Passionate about solving 
+        real-world problems and continuously learning new skills.
       </p>
 
       <button onClick={() => navigate("/projects")}>
-        View My Projects
+        View My Work
       </button>
     </div>
   );

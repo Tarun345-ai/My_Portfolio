@@ -1,23 +1,25 @@
-function About() {
+import { useNavigate } from "react-router-dom";
+
+function Home() {
+  const navigate = useNavigate();
+
   return (
-    <div className="about">
-      <h1>About Me</h1>
+    <div className="home">
+      <h1>Hi, I'm Tarun 👋</h1>
+
+      <h2>Aspiring Full Stack Developer</h2>
 
       <p>
-        I am Tarun, a passionate developer currently learning web development.
-        I enjoy building projects and exploring new technologies.
+        I build responsive and user-friendly web applications using modern 
+        technologies like React and JavaScript. Passionate about solving 
+        real-world problems and continuously learning new skills.
       </p>
 
-      <h2>Skills</h2>
-
-      <div className="skills">
-  <span>HTML</span>
-  <span>CSS</span>
-  <span>JavaScript</span>
-  <span>React</span>
-</div>
+      <button onClick={() => navigate("/projects")}>
+        View My Work
+      </button>
     </div>
   );
 }
 
-export default About;
+export default Home;

@@ -9,14 +9,14 @@ function Contact() {
       <p>
         GitHub: 
         <a href="https://github.com/" target="_blank" rel="noreferrer">
-          Visit
+          Visit Profile
         </a>
       </p>
 
       <p>
         LinkedIn: 
         <a href="https://linkedin.com/" target="_blank" rel="noreferrer">
-          Visit
+          Visit Profile
         </a>
       </p>
       <a href={resume} download>
