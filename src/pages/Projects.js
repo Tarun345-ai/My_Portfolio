@@ -1,34 +1,27 @@
 import projects from "../data/projects";
+import { motion } from "framer-motion";
 
 function Projects() {
   return (
-    <div className="projects">
+    <div>
       <h1>My Projects</h1>
 
-      <div className="project-container">
-        {projects.map((project) => (
-          <div className="project-card" key={project.id}>
-            <img src={project.image} alt={project.title} />
-            {project.video && (
-         <iframe
-             width="100%"
-    height="200"
-    src={project.video}
-    title="project video"
-    frameBorder="0"
-    allowFullScreen
-  ></iframe>
-)}
-            <h2>{project.title}</h2>
-            <p>{project.description}</p>
+      {projects.map((project) => (
+        <motion.div
+          className="project-card"
+          key={project.id}
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+        >
+          <h2>{project.title}</h2>
+          <img src={project.image} alt={project.title} width="100%" />
+          <p>{project.description}</p>
 
-            <div>
-              <a href={project.github} target="_blank" rel="noreferrer">GitHub</a>
-              <a href={project.demo} target="_blank" rel="noreferrer">Live Demo</a>
-            </div>
-          </div>
-        ))}
-      </div>
+          <a href={project.github} target="_blank" rel="noreferrer">GitHub</a> | 
+          <a href={project.demo} target="_blank" rel="noreferrer">Live Demo</a>
+        </motion.div>
+      ))}
     </div>
   );
 }
