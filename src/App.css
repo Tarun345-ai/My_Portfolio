@@ -60,3 +60,16 @@ button:hover {
 .project-card:hover {
   transform: scale(1.05);
 }
+nav a.active {
+  border-bottom: 2px solid #00c6ff;
+}
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0,198,255,0.6);
+}

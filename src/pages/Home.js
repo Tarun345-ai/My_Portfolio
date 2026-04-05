@@ -9,13 +9,15 @@ function Home() {
       className="home"
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 1 }}
+      transition={{ duration: 0.8 }}
     >
       <h1>Hi, I'm Tarun 👋</h1>
+
       <h2>Aspiring Full Stack Developer</h2>
 
       <p>
-        I build modern, responsive web applications using React and JavaScript.
+        I build responsive and user-friendly web applications using modern 
+        technologies like React and JavaScript.
       </p>
 
       <button onClick={() => navigate("/projects")}>

@@ -1,25 +1,17 @@
-import { useNavigate } from "react-router-dom";
+import { motion } from "framer-motion";
 
-function Home() {
-  const navigate = useNavigate();
-
+function About() {
   return (
-    <div className="home">
-      <h1>Hi, I'm Tarun 👋</h1>
-
-      <h2>Aspiring Full Stack Developer</h2>
-
-      <p>
-        I build responsive and user-friendly web applications using modern 
-        technologies like React and JavaScript. Passionate about solving 
-        real-world problems and continuously learning new skills.
-      </p>
-
-      <button onClick={() => navigate("/projects")}>
-        View My Work
-      </button>
-    </div>
+    <motion.div
+      className="about"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.5 }}
+    >
+      <h1>About Me</h1>
+      {/* your content */}
+    </motion.div>
   );
 }
 
-export default Home;
+export default About;
