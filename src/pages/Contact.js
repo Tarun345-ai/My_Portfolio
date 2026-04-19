@@ -1,53 +1,40 @@
-import { motion } from "framer-motion";
-import resume from "../assets/Resume (2).pdf";
-
-const links = [
-  { icon: "✉️", label: "Email", value: "tarun@example.com", href: "mailto:tarun@example.com" },
-  { icon: "💻", label: "GitHub", value: "github.com/your-username", href: "https://github.com/your-username" },
-  { icon: "🔗", label: "LinkedIn", value: "linkedin.com/in/your-profile", href: "https://linkedin.com/in/your-profile" },
-];
+import { motion } from 'framer-motion';
+import resume from '../assets/Resume (2).pdf';
 
 function Contact() {
   return (
-    <div className="page">
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.6 }}
-      >
-        <div className="section-header">
-          <h1>Contact Me</h1>
-          <p>Let's connect — I'm always open to new opportunities</p>
+    <motion.div
+      className="contact-page"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.5 }}
+    >
+      <h1 className="page-title">Contact me</h1>
+      <p className="page-sub">Let's connect — I'm always open to new opportunities.</p>
+
+      <div className="contact-card">
+        <div className="contact-row">
+          <span className="contact-label">Email</span>
+          <a href="mailto:your-real-email@gmail.com">your-real-email@gmail.com</a>
         </div>
-
-        <div className="contact-wrapper">
-          <div className="contact-links">
-            {links.map(link => (
-              <a
-                key={link.label}
-                href={link.href}
-                className="contact-link-item"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <div className="contact-icon">{link.icon}</div>
-                <div className="contact-info">
-                  <strong>{link.label}</strong>
-                  <span>{link.value}</span>
-                </div>
-                <span style={{ marginLeft: "auto", color: "#6c63ff" }}>→</span>
-              </a>
-            ))}
-          </div>
-
-          <a href={resume} download style={{ display: "block" }}>
-            <button className="btn-primary" style={{ width: "100%", fontSize: 16 }}>
-              Download Resume
-            </button>
+        <div className="contact-row">
+          <span className="contact-label">GitHub</span>
+          <a href="https://github.com/Tarun345-ai" target="_blank" rel="noreferrer">
+            github.com/Tarun345-ai
           </a>
         </div>
-      </motion.div>
-    </div>
+        <div className="contact-row">
+          <span className="contact-label">LinkedIn</span>
+          <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noreferrer">
+            linkedin.com/in/your-profile
+          </a>
+        </div>
+      </div>
+
+      <a href={resume} download>
+        <button className="btn-primary" style={{ marginTop: '28px' }}>Download resume</button>
+      </a>
+    </motion.div>
   );
 }
 

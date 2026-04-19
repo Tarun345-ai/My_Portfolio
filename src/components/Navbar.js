@@ -1,6 +1,8 @@
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 
 function Navbar() {
+  const navigate = useNavigate();
+
   return (
     <nav className="navbar">
       <NavLink to="/" className="nav-logo">tarun.</NavLink>
@@ -12,7 +14,7 @@ function Navbar() {
         <NavLink to="/contact" className={({isActive}) => isActive ? 'active' : ''}>Contact</NavLink>
       </div>
 
-      <a href="#contact" className="nav-cta">Hire me</a>
+      <button className="nav-cta" onClick={() => navigate('/contact')}>Hire me</button>
     </nav>
   );
 }
