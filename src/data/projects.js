@@ -1,5 +1,5 @@
-import project1 from "../assets/project_1.png";
-import project2 from "../assets/Project_2.png";
+import project1 from "../assets/project_1.jpg";
+import project2 from "../assets/Project_2.jpg";
 
 const projects = [
   {
