@@ -1,23 +1,23 @@
-import project1 from "../assets/project_1.jpg";
-import project2 from "../assets/Project_2.jpg";
+import project1 from "../assets/project1.png";
+import project2 from "../assets/project2.png";
 
 const projects = [
   {
     id: 1,
-    title: "Portfolio Website",
-    description: "My personal portfolio built using React.",
+    title: "Personal Portfolio Website",
+    tags: ["React", "Vercel"],          // ← add tags here
+    description: "Responsive portfolio built with React — dynamic project rendering, Framer Motion animations, and Cloudinary media hosting.",
     image: project1,
-    video: "https://www.youtube.com/embed/jefp7vkPnuE?si=JqiMgPW_azejJFlq",
-    github: "https://github.com/",
-    demo: "https://example.com"
+    github: "https://github.com/Tarun345-ai/My_Portfolio",
+    demo: "https://my-portfolio-henna-xi-98.vercel.app/"
   },
   {
     id: 2,
-    title: "Mini Project",
-    description: "A simple project I built during learning.",
+    title: "Task Management App",
+    tags: ["JavaScript", "React"],      // ← add tags here
+    description: "Task management app built with React — add, delete, and track tasks with a clean, responsive UI.",
     image: project2,
-    video: "https://www.youtube.com/embed/sjIpt7wNMN8?si=nFS8r1lgnpAHPrMU",
-    github: "https://github.com/",
+    github: "https://github.com/Tarun345-ai",
     demo: "https://example.com"
   }
 ];
