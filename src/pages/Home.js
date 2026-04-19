@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 import resume from '../assets/Resume (2).pdf';
+import photo from '../assets/photo.jpg';  
 
 function Home() {
   const navigate = useNavigate();
@@ -12,6 +13,7 @@ function Home() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, ease: 'easeOut' }}
     >
+      <img src={photo} alt="Tarun" className="hero-photo" /> 
       <span className="hero-badge">Open to opportunities</span>
       <h1 className="hero-heading">I build things<br />for the web.</h1>
       <p className="hero-sub">
