@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 import resume from '../assets/Resume (2).pdf';
-import photo from '../assets/photo.jpg';  
+import photo from '../assets/Profile_photo.jpeg';  
 
 function Home() {
   const navigate = useNavigate();
