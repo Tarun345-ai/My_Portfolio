@@ -18,7 +18,7 @@ const projects = [
     description: "Task management app built with React — add, delete, and track tasks with a clean, responsive UI.",
     image: project2,
     github: "https://github.com/Tarun345-ai",
-    demo: "https://example.com"
+    demo: "https://player.cloudinary.com/embed/?cloud_name=dpigvxitu&public_id=screenrecord_oc2dz9"
   }
 ];
 
